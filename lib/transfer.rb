@@ -37,7 +37,6 @@ end
         self.receiver.balance
         self.sender.balance
  end
- end
 
 
 
