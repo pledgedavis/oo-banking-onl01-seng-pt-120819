@@ -27,7 +27,7 @@ end
 end
 
  def reverse_transfer
-  # binding.pry
+  binding.pry
 #   self.receiver.balance -= amount
 # self.sender.balance = receiver.balance
  # if valid? && self.sender.balance < amount && self.status -= "pending"
