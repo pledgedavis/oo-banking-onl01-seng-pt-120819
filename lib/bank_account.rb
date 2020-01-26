@@ -26,14 +26,18 @@ end
 
 def valid?
     if  @status == "open" && @balance > 0 
-       return TRUE
+       return true
     else 
         # @status != "open" && @balance < 0 
-       return FALSE
+       return false
     end
 end
 
+def close_account
 
+@status = "closed"
+
+end
 
 
 
