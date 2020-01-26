@@ -19,10 +19,19 @@ def deposit(money)
 end
  
  def display_balance
-   @balance
+   "Your balance is $#{@balance}."
  end
 
 
+
+def valid?
+    if  @status == "open" && @balance > 0 
+       return TRUE
+    else 
+        # @status != "open" && @balance < 0 
+       return FALSE
+    end
+end
 
 
 
