@@ -36,6 +36,7 @@ end
         # self.sender.balance += amount
         self.receiver.balance -= @amount
         self.sender.balance += @amount
+        self.status = "reversed"
  end
 
 
