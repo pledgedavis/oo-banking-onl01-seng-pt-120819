@@ -39,7 +39,7 @@ end
             # self.status = "reversed"
 
 
-          if self.status = "complete"
+          if self.status == "complete"
               self.receiver.balance -= @amount
                 self.sender.balance += @amount
                 self.status = "reversed"
