@@ -15,12 +15,12 @@ def valid?
 end
 
 def execute_transaction
-  
+
   if valid? && self.sender.balance > amount && self.status == "pending"
         self.receiver.balance += amount
         self.status = "complete"
         self.sender.balance -= amount
-  else 
+  else
       self.status = "rejected"
        "Transaction rejected. Please check your account balance."
 end
@@ -30,10 +30,12 @@ end
   # binding.pry
 #   self.receiver.balance -= amount
 # self.sender.balance = receiver.balance
- if valid? && self.sender.balance < amount && self.status -= "pending"
+ # if valid? && self.sender.balance < amount && self.status -= "pending"
         # self.receiver.balance > amount
         # self.status = "complete"
         # self.sender.balance += amount
+        self.receiver.balance
+        self.sender.balance
  end
  end
 
