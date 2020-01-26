@@ -10,9 +10,9 @@ class Transfer
 
 
 def valid?
-  # binding.pry
- bankaccount
-true
+# binding.pry
+ self.receiver.valid?
+ self.sender.valid?
 end
 
 
