@@ -34,9 +34,9 @@ end
         # self.receiver.balance > amount
         # self.status = "complete"
         # self.sender.balance += amount
-            self.receiver.balance -= @amount
-            self.sender.balance += @amount
-            self.status = "reversed"
+            # self.receiver.balance -= @amount
+            # self.sender.balance += @amount
+            # self.status = "reversed"
 
 
           if self.status = "complete"
