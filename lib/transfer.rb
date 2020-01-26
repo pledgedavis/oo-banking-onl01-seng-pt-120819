@@ -15,10 +15,19 @@ def valid?
  self.sender.valid?
 end
 
-
-
-
-
+def execute_transaction
+  # binding.pry 
+  # self.sender.balance -= @amount
+  # self.receiver.balance += @amount
+  # @status = "complete"
+  # self.sender.balance -=
+  
+  if self.sender.balance > @amount && self.status == "pending"
+    self.receiver.balance += @amount
+  self.status = "complete"
+  self.sender.balance -= @amount
+end
+end
 
 
 
